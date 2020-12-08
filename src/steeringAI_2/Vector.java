@@ -1,4 +1,4 @@
-package steeringAI;
+package steeringAI_2;
 
 public class Vector {
 	
@@ -12,6 +12,10 @@ public class Vector {
 	public Vector(double x, double y) {
 		this.x = x;
 		this.y = y;
+	}
+	
+	public double distance(Vector v2) {
+		return (this.subtract(v2)).getMagnitude();
 	}
 	
 	public void limit(double max) {
